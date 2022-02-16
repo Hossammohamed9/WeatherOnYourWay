@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Weather On The Way</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">HAVE A GREAT DAY</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="offline">You are offline</string>
+    <string name="didnt_enable_loc">Location Not Enabled</string>
+    <string name="load_details">You have to enable location service to load the Weather details</string>
+    <string name="enable">Enable</string>
+    <string name="load_from_last_known_data">Load From Last Known data</string>
+    <string name="weather_alert">Weather Alert</string>
+    <string name="take_care">\"Take care the Weather is \"</string>
+    <string name="missing_details">Some Details Are Missing</string>
+    <string name="cant_create_alert_at_this_time">can\'t create alert at this time</string>
+    <string name="are_you_sure">Are you Sure</string>
+    <string name="you_want_to_add">you want to add this location to favourite places</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_sure_location">you want to add this location to store as your location</string>
+    <string name="you_are_offline">You Are Offline</string>
+
+
+    //      *** Design Texts ***
+
+    <string name="humidity">Humidity</string>
+    <string name="clouds">Clouds</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="pressure">Pressure</string>
+    <string name="wind">Wind</string>
+    <string name="next_48_hours">Next 48 Hours</string>
+    <string name="next_7_days">Next 7 Days</string>
+    <string name="choose_your_language">Choose Your Language</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="choose_your_unit">Choose Your Prefered Unit</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="kelvin">Kelvin</string>
+    <string name="choose_your_location">Choose Your Location</string>
+    <string name="from_current_location">Your Current Location</string>
+    <string name="from_map">Choose From Map</string>
+    <string name="save">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_new_alert">Create New Alert</string>
+    <string name="repetition">Repetition</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="menu_alerts">Alerts</string>
+    <string name="menu_settings">Settings</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+
+    <string-array name="alert">
+        <item>Snow</item>
+        <item>Rain</item>
+        <item>Thunderstorm</item>
+        <item>clouds</item>
+        <item>Temperature</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">الطقس في الطريق</string>
+    <string name="navigation_drawer_open">افتح القائمة</string>
+    <string name="navigation_drawer_close">اغلق القائمة</string>
+    <string name="nav_header_title">اتمني لك يوما سعيدا</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">الاعدادات</string>
+    <string name="offline">انت غير متصل بالانترنت</string>
+    <string name="didnt_enable_loc">لم يتم تمكين تحديد الموقع</string>
+    <string name="load_details">يجب تمكين اذن تحديد الموقع ليتم عرض حالة الطقس</string>
+    <string name="enable">تمكين</string>
+    <string name="load_from_last_known_data">تحميل من اخر بيانات معروفة</string>
+    <string name="weather_alert">تنبيه الطقس</string>
+    <string name="take_care">\"احترس الطقس \"</string>
+    <string name="missing_details">بعض التفاصيل مفقودة</string>
+    <string name="cant_create_alert_at_this_time">لا يمكن انشاء تنبيه في هذا الوقت</string>
+    <string name="are_you_sure">هل انت متأكد</string>
+    <string name="you_want_to_add">هل تريد اضافة هذا الموقع الى قائمة المفضلة</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="are_you_sure_location">هل تريد اضافة هذا الموقع كموقعك الحالي</string>
+    <string name="you_are_offline">انت غير متصل بالانترنت</string>
+
+
+    //      *** Design Texts ***
+
+    <string name="humidity">الرطوبة</string>
+    <string name="clouds">السحب</string>
+    <string name="sunrise">الشروق</string>
+    <string name="sunset">الغروب</string>
+    <string name="pressure">الضغط</string>
+    <string name="wind">الرياح</string>
+    <string name="next_48_hours">ال 48 ساعة القادمة</string>
+    <string name="next_7_days">ال 7 ايام القادمة</string>
+    <string name="choose_your_language">اختر اللغة</string>
+    <string name="english">الانجليزية</string>
+    <string name="arabic">العربية</string>
+    <string name="choose_your_unit">اختر وحدة القياس المفضلة</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="kelvin">Kelvin</string>
+    <string name="choose_your_location">تحديد الموقع</string>
+    <string name="from_current_location">موقعك الحالي</string>
+    <string name="from_map">اختر من الخريطة</string>
+    <string name="save">اضافة</string>
+    <string name="cancel">الغاء</string>
+    <string name="create_new_alert">اضافة تنبيه جديد</string>
+    <string name="repetition">تكرار</string>
+
+
+
+
+    <string name="menu_home">الرئيسية</string>
+    <string name="menu_favorite">المفضلة</string>
+    <string name="menu_alerts">التنبيهات</string>
+    <string name="menu_settings">الاعدادات</string>
+    <string name="to">الى</string>
+    <string name="from">من</string>
+
+    <string-array name="alert">
+        <item>thunderstorm</item>
+        <item>drizzle</item>
+        <item>rain</item>
+        <item>snow</item>
+        <item>clouds</item>
+    </string-array>
+</resources>

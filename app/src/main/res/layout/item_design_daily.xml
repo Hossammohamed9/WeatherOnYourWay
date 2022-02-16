@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:background="@color/light_bg"
+    android:layout_margin="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/light_bg">
+
+
+        <TextView
+            android:id="@+id/dailyDayNameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Sunday"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/dailyImageViewId"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dailyMaxTempId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="18"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/dailyDayNameId"
+            app:layout_constraintStart_toStartOf="@+id/dailyDayNameId"
+            app:layout_constraintTop_toBottomOf="@+id/dailyDayNameId" />
+
+        <TextView
+            android:id="@+id/dailyMinTempId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="C"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/dailyMaxTempId"
+            app:layout_constraintStart_toEndOf="@+id/dailyMaxTempId"
+            app:layout_constraintTop_toTopOf="@+id/dailyMaxTempId" />
+
+        <ImageView
+            android:id="@+id/dailyImageViewId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/weather_status_test" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toEndOf="@+id/dailyImageViewId"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/humidity" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView15"
+            app:layout_constraintStart_toStartOf="@+id/imageView15"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:srcCompat="@drawable/cloud" />
+
+        <TextView
+            android:id="@+id/dailyHumidityId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="64"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+            app:layout_constraintStart_toEndOf="@+id/imageView15"
+            app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+        <TextView
+            android:id="@+id/dailyCloudsId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="16"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/dailyHumidityId"
+            app:layout_constraintStart_toStartOf="@+id/dailyHumidityId"
+            app:layout_constraintTop_toBottomOf="@+id/dailyHumidityId" />
+
+        <TextView
+            android:id="@+id/dailyDescriptionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Rainy"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/dailyImageViewId"
+            app:layout_constraintStart_toStartOf="@+id/dailyImageViewId"
+            app:layout_constraintTop_toBottomOf="@+id/dailyImageViewId" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="%"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/dailyHumidityId"
+            app:layout_constraintStart_toEndOf="@+id/dailyHumidityId"
+            app:layout_constraintTop_toTopOf="@+id/dailyHumidityId" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="%"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/dailyCloudsId"
+            app:layout_constraintStart_toEndOf="@+id/dailyCloudsId"
+            app:layout_constraintTop_toTopOf="@+id/dailyCloudsId" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

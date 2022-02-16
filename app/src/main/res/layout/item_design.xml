@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="130dp"
+    android:layout_height="250dp"
+    app:cardCornerRadius="10dp"
+    android:background="@color/light_bg"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="130dp"
+        android:layout_height="250dp"
+        android:background="@color/light_bg">
+
+        <TextView
+            android:id="@+id/hourlyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="1 PM"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/hourlyModeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/weather_status_test"
+            app:layout_constraintEnd_toEndOf="@+id/hourlyTime"
+            app:layout_constraintStart_toStartOf="@+id/hourlyTime"
+            app:layout_constraintTop_toBottomOf="@+id/hourlyTime" />
+
+        <TextView
+            android:id="@+id/hourlyDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Sunny"
+            android:textColor="@color/dark_text_color"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hourlyModeImage" />
+
+        <TextView
+            android:id="@+id/hourlyTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="22"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/hourlyDesc"
+            app:layout_constraintStart_toStartOf="@+id/hourlyDesc"
+            app:layout_constraintTop_toBottomOf="@+id/hourlyDesc" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/hourlyTemp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hourlyTemp"
+            app:srcCompat="@drawable/cloud" />
+
+        <TextView
+            android:id="@+id/hourlyClouds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="88%"
+            android:textColor="@color/dark_text_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/humidity" />
+
+        <TextView
+            android:id="@+id/hourlyHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="6dp"
+            android:text="69%"
+            android:textSize="12sp"
+            android:textColor="@color/dark_text_color"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView10"
+            app:layout_constraintStart_toStartOf="@+id/imageView10"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            app:srcCompat="@drawable/wind" />
+
+        <TextView
+            android:id="@+id/hourlyWind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="12.7 km/h"
+            android:textSize="12sp"
+            android:textColor="@color/dark_text_color"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+        <TextView
+            android:id="@+id/hourlyTempUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="C"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/hourlyTemp"
+            app:layout_constraintStart_toEndOf="@+id/hourlyTemp"
+            app:layout_constraintTop_toTopOf="@+id/hourlyTemp"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="%"
+            android:textColor="@color/dark_text_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/hourlyClouds"
+            app:layout_constraintStart_toEndOf="@+id/hourlyClouds"
+            app:layout_constraintTop_toTopOf="@+id/hourlyClouds" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="%"
+            android:textColor="@color/dark_text_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/hourlyHumidity"
+            app:layout_constraintStart_toEndOf="@+id/hourlyHumidity"
+            app:layout_constraintTop_toTopOf="@+id/hourlyHumidity" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="km/h"
+            android:textColor="@color/dark_text_color"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/hourlyWind"
+            app:layout_constraintStart_toEndOf="@+id/hourlyWind"
+            app:layout_constraintTop_toTopOf="@+id/hourlyWind" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

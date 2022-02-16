@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.weatherontheway">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/icon_bg"
+        android:label="@string/app_name"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/icon_bg_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WeatherOnTheWay"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,UnusedAttribute">
+        <activity
+            android:name=".ui.favorite.FavoriteDetailsActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ui.alerts.CreateAlert"
+            android:label="@string/create_new_alert"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Dialog"
+            />
+        <activity
+            android:name=".ui.mainactivity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.WeatherOnTheWay.NoActionBar">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDztAjcgoolhK_1EtCISqxjf2cBA33tk0Q" />
+
+        <activity
+            android:name=".ui.map.MapActivity"
+            android:label="Map"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ui.splashscreen.Splash"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".ui.alerts.AlertRecever" />
+    </application>
+
+</manifest>
